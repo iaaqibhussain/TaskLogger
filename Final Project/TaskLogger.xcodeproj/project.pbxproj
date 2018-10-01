@@ -60,6 +60,7 @@
 		7B3E492C2160C02F00961858 /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
+				7B572BF02162C8B600D7E9F7 /* View */,
 				7B3E493A2161157F00961858 /* Router */,
 				7B3E49372160E6ED00961858 /* Presenter */,
 				7B3E49342160E39100961858 /* Interactor */,
@@ -152,6 +153,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7B572BEF2162C8A300D7E9F7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7B3E49302160C0A700961858 /* TaskItem.swift */,
+				7B3E49322160E19200961858 /* TasksManager.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7B572BF02162C8B600D7E9F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B6F6409215782F30079749C /* TaskListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7B6F63FB215782F30079749C = {
 			isa = PBXGroup;
 			children = (
@@ -171,16 +189,14 @@
 		7B6F6406215782F30079749C /* TaskLogger */ = {
 			isa = PBXGroup;
 			children = (
+				7B572BEF2162C8A300D7E9F7 /* Entities */,
 				7B3E493D21612EF100961858 /* TaskDetail */,
 				7B3E492C2160C02F00961858 /* TaskList */,
 				7B6F6407215782F30079749C /* AppDelegate.swift */,
-				7B6F6409215782F30079749C /* TaskListViewController.swift */,
 				7B6F640B215782F30079749C /* Main.storyboard */,
 				7B6F640E215782FD0079749C /* Assets.xcassets */,
 				7B6F6410215782FD0079749C /* LaunchScreen.storyboard */,
 				7B6F6413215782FD0079749C /* Info.plist */,
-				7B3E49302160C0A700961858 /* TaskItem.swift */,
-				7B3E49322160E19200961858 /* TasksManager.swift */,
 			);
 			path = TaskLogger;
 			sourceTree = "<group>";

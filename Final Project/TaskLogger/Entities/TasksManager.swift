@@ -14,9 +14,6 @@ class TasksManager: NSObject {
     
     static let shared = TasksManager()
     
-    var tasks: [TaskItem] = [TaskItem(title: "Foucs", description: "Something"),
-                             TaskItem(title: "Foucs", description: "Something"),
-                             TaskItem(title: "Foucs", description: "Something")]
-    
+    var tasks: [TaskItem] = []
     
 }

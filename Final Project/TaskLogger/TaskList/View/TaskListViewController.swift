@@ -100,6 +100,13 @@ class TaskListViewController: UITableViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    private func showAlert(_ message: String) {
+        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func addTask(_ sender: UIBarButtonItem) {
         addTask()
     }
@@ -117,10 +124,4 @@ extension TaskListViewController: TaskListViewProtocol {
         showAlert(message)
     }
     
-    private func showAlert(_ message: String) {
-        let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
 }
