@@ -44,5 +44,11 @@ class TaskListViewController: UITableViewController {
         return [edit, delete]
         
     }
+    
+    //MARK: Functions
+    
+    @IBAction func addTask(_ sender: UIBarButtonItem) {
+     
+    }
 
 }

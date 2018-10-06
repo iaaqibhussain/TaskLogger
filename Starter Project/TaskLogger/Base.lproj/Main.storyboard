@@ -69,6 +69,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="TaskLogger" id="srU-Mi-gjK">
                         <barButtonItem key="backBarButtonItem" title=" " id="a4x-BV-9be"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ceg-cv-8i6">
+                            <connections>
+                                <action selector="addTask:" destination="Twd-Dt-Pu0" id="s7C-PO-yGy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="96P-tI-Dv3" kind="show" id="U0V-lh-M5A"/>
