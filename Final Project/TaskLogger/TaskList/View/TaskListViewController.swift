@@ -61,12 +61,13 @@ class TaskListViewController: UITableViewController {
     //MARK: Functions
     
     private func setupPresenter() {
-        presenter = TaskListPresenter()
+        let presenter: TaskListPresenter & TaskListInteractorToPresenterProtocol = TaskListPresenter()
+        self.presenter = presenter
         let interactor = TaskListInteractor()
-        presenter?.interactor = interactor
-        interactor.presenter = self.presenter as? TaskListInteractorToPresenterProtocol
-        presenter?.router = TaskListRouter()
-        presenter?.view = self
+        self.presenter?.interactor = interactor
+        interactor.presenter = presenter
+        self.presenter?.router = TaskListRouter()
+        self.presenter?.view = self
     }
     
     private func addTask() {

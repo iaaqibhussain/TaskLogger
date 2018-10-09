@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: VIEW
+
 protocol TaskListViewProtocol: class {
     
     var presenter: TaskListPresenterProtocol? { get set }
@@ -15,6 +17,8 @@ protocol TaskListViewProtocol: class {
     func showTasks(_ tasks: [TaskItem])
     func showMessage(_ message: String)
 }
+
+// MARK: PRESENTER
 
 protocol TaskListPresenterProtocol: class {
     
@@ -28,6 +32,8 @@ protocol TaskListPresenterProtocol: class {
     func editTask(_ index: Int, title: String, description: String?)
     func removeTask(_ index: Int)
 }
+
+// MARK: INTERACTOR
 
 protocol TaskListPresenterToInteractorProtocol: class {
     
@@ -47,6 +53,8 @@ protocol TaskListInteractorToPresenterProtocol: class {
     func didEditTasks()
     func onError(message: String)
 }
+
+// MARK: ROUTER
 
 protocol TaskListRouterProtocol: class {
     

@@ -19,5 +19,4 @@ class TaskListRouter: TaskListRouterProtocol {
         tasklistViewController.navigationController?.pushViewController(taskDetail, animated: true)
     }
     
-    
 }
