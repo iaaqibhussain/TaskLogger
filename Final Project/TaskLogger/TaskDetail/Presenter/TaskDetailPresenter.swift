@@ -12,7 +12,6 @@ class TaskDetailPresenter: TaskDetailPresenterProtocol {
     
     var view: TaskDetailViewProtocol?
     var interactor: TaskDetailPresenterToInteractorProtocol?
-    var router: TaskDetailRouterProtocol?
     
     func showDetail() {
         guard let task = interactor?.taskItem else { return }
