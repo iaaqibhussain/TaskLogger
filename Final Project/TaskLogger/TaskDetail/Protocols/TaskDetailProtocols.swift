@@ -19,7 +19,6 @@ protocol TaskDetailPresenterProtocol: class {
     
     var view: TaskDetailViewProtocol? { get set }
     var interactor: TaskDetailPresenterToInteractorProtocol? { get set }
-    var router: TaskDetailRouterProtocol? { get set }
     
     func showDetail()
 }
