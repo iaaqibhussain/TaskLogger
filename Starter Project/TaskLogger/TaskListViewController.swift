@@ -28,22 +28,6 @@ class TaskListViewController: UITableViewController {
     
     //MARK: TableView Delegate
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
-        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
-        }
-        
-        let edit = UITableViewRowAction(style: .default, title: "Edit") { (action, indexPath) in
-        }
-        edit.backgroundColor = UIColor.lightGray
-        
-        return [edit, delete]
-        
-    }
     
     //MARK: Functions
     
