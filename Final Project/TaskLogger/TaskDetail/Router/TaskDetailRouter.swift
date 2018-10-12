@@ -21,8 +21,6 @@ class TaskDetailRouter: TaskDetailRouterProtocol {
         let interactor = TaskDetailInteractor()
         interactor.taskItem = task
         presenter.interactor = interactor
-        let router = TaskDetailRouter()
-        presenter.router = router
         
         return taskDetailViewController
     }
