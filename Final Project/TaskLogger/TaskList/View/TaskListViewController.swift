@@ -45,7 +45,6 @@ class TaskListViewController: UITableViewController {
         
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
             self.presenter?.removeTask(indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
            }
         
         let edit = UITableViewRowAction(style: .default, title: "Edit") { (action, indexPath) in
